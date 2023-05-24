@@ -1,0 +1,55 @@
+@import '../variables';
+.testimonials-section{
+  background-color: #030303;
+  width: 100%;
+  .testimonials-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 55px;
+    margin-top: 130px;
+
+    .testimonials-list-item{
+      text-align: center;
+      &::before{
+        content: "“";
+        font-size: 120px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: $blue;
+        display: block;
+        line-height: 0;
+      }
+      p{
+        color: #a7a7a7;
+        margin-bottom: 26px;
+      }
+      a{
+        color: $blue;
+        font-family: 'Poppins';
+        font-weight: 600;
+        line-height: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      em{
+        display: block;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:970px){
+  .testimonials-section{
+    .testimonials-list{
+      grid-template-columns: 1fr;
+      gap: 110px;
+
+    }
+  }
+}

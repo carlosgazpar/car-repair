@@ -19,3 +19,36 @@ li{
   list-style: none;
 }
 
+.container{
+  width: 1170px;
+  margin: auto;
+  position: relative;
+  padding: 100px 15px 75px 15px;
+}
+
+
+@media screen and (max-width: 1170px){
+  .container{
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 970px){
+  .container{
+    width: 750px;
+    padding-top: 75px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .container{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container{
+    width: auto;
+  }
+}
+

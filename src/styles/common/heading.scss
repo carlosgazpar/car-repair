@@ -1,0 +1,25 @@
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading h2{
+  color: white;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading span{
+  width: 67px;
+  height: 12px;
+  background-image: url(../../assets/icons/wings.png);
+  display: block;
+  background-repeat: no-repeat;
+  margin-bottom: 14px;
+}
