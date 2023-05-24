@@ -1,9 +1,9 @@
+import Testimonials from "./components/Testimonials"
 import "./styles/index.scss"
 const App = () => {
   return(
     <>
-      <button>hola mundo</button>
-      <button>adios mundo</button>
+      <Testimonials />
     </>
   )
 }
