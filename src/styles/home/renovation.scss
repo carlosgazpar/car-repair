@@ -1,0 +1,130 @@
+@import "../variables";
+.renovation-section{
+  background-color: #262626;
+  .container{
+    display: flex;
+    gap: 15px;
+    .renovation-img{
+      width: calc(58% - 189px);
+      text-align: right;
+      padding-right: 189px;
+      position: relative;
+      z-index: 1;
+      padding-top: 43px;
+      &::before{
+        content: '';
+        border: 8px solid $blue;
+        width: 255px;
+        position: absolute;
+        top: 0;
+        right: 134px;
+        bottom: 111px;
+        z-index: -1;
+      }
+      h3{
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 38px;
+        background-color: #262626;
+      }
+      h2{
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 48px;
+        background-color: #262626;
+      }
+      p{
+        color: #a7a7a7;
+        padding-top: 9px;
+        padding-bottom: 37px;
+        background-color: #262626;
+      }
+    }
+    .renovation-cards{
+      width: 42%;
+      margin-top: 47px;
+      .renovation-cards-item{
+        display: flex;
+        gap: 18px;
+        margin-bottom: 37px;
+        .renovation-item-icon{
+          background-color:$blue;
+          min-width: 2.55em;
+          height: 2.55em;
+          text-align: center;
+          border-radius: 2px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .renovation-item-text{
+          h4{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            color: white;
+            margin-top: 9px;
+            margin-bottom: 20px;
+          }
+          p{
+            color: #a7a7a7;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1200px){
+.renovation-section{
+  .container{
+    .renovation-img {
+      img{
+        width: 535px;
+      }
+    }
+  }
+}
+}
+
+@media screen and (max-width:970px){
+  .renovation-section{
+    .container{
+      flex-wrap: wrap;
+      .renovation-img{
+        img{
+          width: 100%;
+        }
+      }
+      .renovation-img, .renovation-cards{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width:767px){
+  .renovation-section{
+    .container{
+      flex-wrap: wrap;
+      .renovation-img{
+        padding-right: 0%;
+        &::before{
+          display: none;
+        }
+        h2{
+          font-size: 40px;
+          font-weight: 400px;
+          line-height: 38px;
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+}
+
