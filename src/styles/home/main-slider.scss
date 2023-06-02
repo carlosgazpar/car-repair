@@ -1,0 +1,45 @@
+@import "../variables";
+.main-slider {
+  .main-slider-item {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    text-align: center;
+    .main-slider-overlay {
+      .main-slider-overlay-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+          width: 286px;
+          margin-bottom: 50px;
+          margin-top: 70px;
+        }
+        h3 {
+          font-family: "Poppins";
+          font-size: 26px;
+          font-weight: 300px;
+          line-height: 26px;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: -2px;
+          margin-bottom: 5px;
+        }
+        h2 {
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 39px;
+          line-height: 39px;
+          color: white;
+          letter-spacing: -2px;
+          margin-bottom: 45px;
+          text-transform: uppercase;
+
+        }
+      }
+    }
+  }
+}
