@@ -37,9 +37,24 @@
           letter-spacing: -2px;
           margin-bottom: 45px;
           text-transform: uppercase;
-
         }
       }
+    }
+  }
+  .swiper-pagination{
+    .swiper-pagination-bullet{
+      background-color: #aeaeae;
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      transform: scale(1);
+      transition: .3s all !important;
+    }
+    .swiper-pagination-bullet-active, .swiper-pagination-bullet:hover{
+      box-shadow: 0 0 0 1px $blue;
+      background-color: transparent;
+      width: 12px;
+      height: 12px;
     }
   }
 }
