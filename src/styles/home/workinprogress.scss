@@ -1,0 +1,47 @@
+@import "../variables";
+.work-in-progress{
+  text-align: center;
+  color: white;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  width: calc(100% + 46px);
+  z-index: 1000;
+  p{
+    color: black;
+    font-weight: 700;
+    width: fit-content;
+    background-color: #ffd600;
+    padding: 0 1em;
+    margin: auto;
+  }
+  div{
+    position: absolute;
+    left: -46px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background: repeating-linear-gradient(
+      -55deg,
+      #ffd600 1px,
+      #000 2px,
+      #000 11px,
+      #ffd600 12px,
+      #ffd600 20px
+    );
+    animation: moveBackground 1.5s linear infinite;
+  }
+
+}
+
+@keyframes moveBackground {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(46px);
+  }
+}
